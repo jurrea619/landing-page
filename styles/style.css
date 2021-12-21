@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -5,16 +9,68 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.main-font {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+.secondary-font {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
 .hero {
     background-color: #1F2937;
 }
 
-.nav {
-    display: flex;
-    padding-top: 8px;
+.info-font {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 800;
 }
 
-.hero-main {
+.hero-content {
+    display: flex;
+    height: 450px;
+}
+
+.hero-content-left {
+    flex: 1 0 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-container {
+    padding: 0 36px;
+    width: 500px;
+}
+
+.hero-content-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.placeholder {
+    background-color: rgba(128, 128, 128, 0.87);
+    padding: 100px 120px;
+}
+
+.button {
+    border-radius: 10px;
+    color: white;
+    background-color: #3882F6;
+    padding: 8px 36px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.nav {
+    display: flex;
+    padding-top: 12px;
 }
 
 .logo {
@@ -29,11 +85,13 @@ body {
 
 .right-links {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 ul {
     display: flex;
-    justify-content: flex-start;
     margin: 0;
     padding: 0;
     gap: 24px;
@@ -41,6 +99,21 @@ ul {
 
 li {
     list-style-type: none;
-    font-size: 18px;
-    color: #E5E7EB;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    height: 450px;
+    border: 2px solid red;
+}
+
+.icon {
+}
+
+.quote-section {
+    height: 450px;
+    background-color: #E5E7EB;
 }
